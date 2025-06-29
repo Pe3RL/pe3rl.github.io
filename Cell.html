@@ -1,0 +1,28 @@
+<div>
+<audio id="bgm" hidden="hidden" volume="0.5">
+  <source src="https://pe3rl.nekoweb.org/music/cell.mp3" type="audio/mp3">
+</audio>
+<script>
+  let bgm = document.getElementById("bgm");
+  bgm.volume = 0.1; // Set initial volume (0.5 is 50%, you can adjust it as needed)
+
+  bgm.play().catch(() => {
+    document.addEventListener("click", () => {
+      bgm.currentTime = 0; // Reset audio to the beginning
+      bgm.play();
+    }, { once: true });
+  });
+
+  // When the audio finishes, reset it to the beginning and play again
+  bgm.addEventListener("ended", () => {
+    bgm.currentTime = 0; // Reset audio to the beginning
+    bgm.play();
+  });
+</script>
+</div>
+<body style="background-color:black;">
+<footer>
+<center>
+    <a href="/beatat3am.html"><img src="https://pe3rl.nekoweb.org/music/perfect.png"></a>
+</center>
+</footer>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <div>
+         <link rel="stylesheet" src="https://webring.nekoweb.org/onionring.css">
+    </div>
+    <div>
+       <link rel="icon" type="image/gif" href="/favicon.gif">
+    </div>
+    <!-- basic header shit -->
+    <div>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pe3rl website</title>
+   <img src="https://pe3rl.nekoweb.org//badass.gif" alt="badass" style="display: block; margin-left: auto; margin-right: auto;">
+    </div>
+     <div>
+         <center>
+              forgot this website existed
+         </center>
+     </div>
+   <!-- Cursor -->
+   <div>
+       <style type="text/css">* {cursor: url(https://cur.cursors-4u.net/anime/ani-12/ani1107.cur), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/03/21/lucky-star-konata-izumi.html" target="_blank" title="Lucky Star - Konata Izumi"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Lucky Star - Konata Izumi" style="position:absolute; top: 0px; right: 0px;" /></a>
+   </div>
+</head>
+<body>
+<div>
+        <div align=center><a href='https://www.counter12.com'><img src='https://www.counter12.com/img-Zd1cB17y795Y6Wdc-56.gif' border='0' alt='free counter'></a><script type='text/javascript' src='https://www.counter12.com/ad.js?id=Zd1cB17y795Y6Wdc'></script></div>
+    
+    <style>
+        body {
+            background-image: url('https://pe3rl.nekoweb.org/dogshit/whtsatinswirlbg.gif'); /* Replace 'your-background-image.jpg' with the URL or path to your background image */
+            background-repeat: repeat; /* This makes the background image tile */
+            background-size: 50px 50px; /* Set the size of each tile */
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <img src="https://pe3rl.nekoweb.org/dogshit/konata" width="250" height="250" alt="konataizumi" style="display: block; margin-left: auto; margin-right: auto;" >
+    <audio id="audio" src="emptyfornow"> </audio>
+  </div>
+  <div>
+<!-- SCM Music Player https://www.scmplayer.net -->
+<script type="text/javascript" src="https://www.scmplayer.net/script.js" 
+data-config="{'skin':'skins/aquaBlue/skin.css','volume':11,'autoplay':true,'shuffle':true,'repeat':1,'placement':'top','showplaylist':false,'playlist':[{'title':'Bless You Boy','url':'https://pe3rl.nekoweb.org/music/blessyouboy.mp3'},{'title':'Chiyo Song','url':'https://pe3rl.nekoweb.org/music/chiyosbadassfuckingsong.mp3'},{'title':'omor','url':'https://pe3rl.nekoweb.org/music/omor.mp3'},{'title':'Perfect Cell Theme Remix','url':'https://pe3rl.nekoweb.org/music/cell.mp3'},{'title':'Way Of Life P3D','url':'https://pe3rl.nekoweb.org/music/DeepInsideMyMindP3D.mp3'},{'title':'School Days','url':'https://pe3rl.nekoweb.org/music/1-07SchoolDays.mp3'},{'title':'my theme song','url':'https://pe3rl.nekoweb.org/music/mythemesong.mp3'},{'title':'peak','url':'https://pe3rl.nekoweb.org/music/peak.mp3'}]}" ></script>
+<!-- SCM Music Player script end -->
+
+  </div>
+ 
+<!-- chatbox below -->
+<div>
+<iframe src="https://www5.cbox.ws/box/?boxid=949602&boxtag=k3FNib" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>	
+</div>
+<!-- dimden music thing from the discord currently plays dragonquest -->
+<div>
+<audio id="bgm" hidden="hidden" volume="0.5">
+  <source src="emptyfornow" type="audio/mp3">
+</audio>
+<script>
+  let bgm = document.getElementById("bgm");
+  bgm.volume = 0.1; // Set initial volume (0.5 is 50%, you can adjust it as needed)
+
+  bgm.play().catch(() => {
+    document.addEventListener("click", () => {
+      bgm.currentTime = 0; // Reset audio to the beginning
+      bgm.play();
+    }, { once: true });
+  });
+
+  // When the audio finishes, reset it to the beginning and play again
+  bgm.addEventListener("ended", () => {
+    bgm.currentTime = 0; // Reset audio to the beginning
+    bgm.play();
+  });
+</script>
+</div>
+</body>
+<footer>
+    <div>
+<center>
+            <!-- buttons -->
+     <a href="https://pe3rl.nekoweb.org/index.html"><img src="https://pe3rl.nekoweb.org/dogshit/persona3button.png"></a>
+    <a href="https://pe3rl.nekoweb.org/index.html"><img src="https://pe3rl.nekoweb.org/dogshit/persona4button.png"></a>
+    <a href="https://pe3rl.nekoweb.org/index.html"><img src="https://pe3rl.nekoweb.org/dogshit/atlusmusicbutton.png"></a>
+    <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif"></a>
+    <a href="https://www.kyotoanimation.co.jp/en/works/luckystar/"><img src="https://pe3rl.nekoweb.org/dogshit/846ctg.gif"></a>
+    <a href="https://pe3rl.nekoweb.org"><img src="https://pe3rl.nekoweb.org/dogshit/meowbuttoin.png"></a>
+    <a href="https://pe3rl.nekoweb.org/Cell.html"><img src="https://pe3rl.nekoweb.org/music/perfectcell.png"></a>
+    </center>
+    <div>
+      <center>
+            <p>add my button :3</p>
+        <textarea readonly="readonly"> <a href="https://pe3rl.nekoweb.org"><img src="https://pe3rl.nekoweb.org/dogshit/meowbuttoin.png"></a> </textarea>
+      </center>
+    </div>
+    <div>
+        <center>
+            <a href="/japanesegenius.html"><img src="https://pe3rl.nekoweb.org/PointlessPages/CTxBe5UbRC4FX1RL.gif"></a>
+        </center>
+    </div> 
+    <div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Set the height of the empty space */
+    .empty-space {
+      height: 100000px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Empty space -->
+  <div class="empty-space"></div>
+
+  <!-- Anchor tag for the URL -->
+ <center>
+      <a href="grade.html"><img src="https://pe3rl.nekoweb.org/dogshit/Adachi3.png"></a>
+
+ </center>
+</body>
+    </div>
+    <div>
+<center>
+            
+                <div id='nekowebring'>
+                <script type="text/javascript" src="https://webring.nekoweb.org/onionring-variables.js"></script>
+                <script type="text/javascript" src="https://webring.nekoweb.org/onionring-widget.js"></script>
+                </div>
+</center>
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,83 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:25:41 Aug 11, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:03:57 Dec 2, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+ td.minifp { padding:20px 0px 30px 0px !important;
+border-bottom:1px solid #ccc;
+width:330px
+
+}
+
+
+td.minifp  p {
+	margin-top:3px;
+    /*font-size:0.9em*/
+    }
+.minifp td img {
+	border:none;
+	margin-left: 0;
+	margin-right: 0.5em;}
+
+
+.minifp-anotherlinks
+{
+	font-weight:bold;
+	font-size:100%;
+	border-bottom:1px solid #ccc;
+	display:block;
+	padding-bottom:5px;
+	margin-bottom:5px;
+	padding-left:20px;
+  	background:url(/web/20130811152541/http://dev.uforum.org.uk/images/M_images/arrow.png) no-repeat 0px 7px;
+    padding-top:3px;
+}
+.minifp ul li {
+	list-style-image:url(../modules/minifrontpage/arrow_green.gif);
+	background:none;
+	padding-left:0;
+	margin-left:20px;
+	font-size:94%; 
+}
+.minifp ul li a { 
+
+}
+span.minifp-introtitle{
+  padding-left:0px
+}
+span.minifp-anotherlinks {
+  padding-left:20px; width:100%;display:block;
+  background:  url(../modules/minifrontpage/mod_h3_light.png) 0 0 repeat-x;
+}
+
+.minifp-introtitle a {
+	font-size:100%;
+	font-weight:bold;
+	color: #333;
+}
+
+.minifp-introtitle a:hover {
+	text-decoration:underline;	
+}
+.minifp-date {
+	color:#666;
+	font-size:9px;
+	font-weight:normal;
+	height:10px;
+}
+a.minifp-full-link {
+	font-weight:bold;
+   background: url(../modules/minifrontpage/readmore.gif )  0px 12px no-repeat;
+
+}
+a:hover.minifp-full-link {
+	text-decoration:underline;
+}

@@ -1,0 +1,48 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:21:48 Aug 11, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:03:59 Dec 2, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+
+#ps_results{z-index: 10000;position: absolute;width: 400px;float:right;background-color: #FFF;text-align: left;visibility: hidden;}
+.ps_results{border: 2px #EEE solid;}
+#ps_results #ps_link{float: right;padding-right: 5px;}
+#ps_results .ps_header{font-weight: bold;font-size: 14px;background-color: #EEE;padding: 4px;}
+#ps_results h3{color: #000;padding-bottom: 3px;}
+#ps_results span{line-height: 100%;}
+#ps_results .ps_row_1{border-top: 2px #EEE solid;background-color: #FFF;padding: 5px;}
+#ps_results .ps_row_2{border-top: 2px #EEE solid;background-color: #FFF;padding: 5px;}
+#ps_results .ps_row_btm{font-weight: bold;font-size: 14px;background-color: #EEE;padding: 4px;}
+
+#ps_results{
+  border:1px solid #666;
+
+}
+div.pixsearch{
+  width:170px;border:0px solid #666; height:30px;
+  background: #fff;
+}
+.ps_pretext{
+margin:0;padding:0
+}
+
+#ps_search_str{
+height:19px;
+width: 135px;
+margin:4px 6px 0 0;
+padding:0;
+display:inline;
+float:left;   }
+
+div.pixsearch span input.searchbutton{
+padding:5px 0 0 0;border:none;height:20px
+
+}

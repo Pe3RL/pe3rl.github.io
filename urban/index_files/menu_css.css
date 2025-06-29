@@ -1,0 +1,319 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:03:10 Aug 11, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:03:56 Dec 2, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+
+
+/*top nav*/
+#mainlevel-nav {
+list-style: none;
+margin:0;
+padding:0;
+background-color: #fff;
+color:#333;
+}
+#mainlevel-nav li{
+display: inline;
+float:left;
+padding-top:3px;
+}
+#mainlevel-nav a{
+	border-right:1px solid #ccc;
+	text-decoration: none;
+	padding: 0px 2px 0 2px;
+	font-size:0.8em;
+    text-transform: capitalize;
+	color:#333;
+    font-family:arial
+
+}
+/****  Main horizontal nav ***/
+/***   use bg image on main div headernav or header nav li element
+which will preserver viewing when text is enlarged***/
+
+
+#headernav ul {
+	list-style: none;
+}
+/*to enable accessible viewing when text is resized specify a bg color/image below otherwise it is not viewable
+*/
+#headernav ul li {
+ border-right:1px solid #f4f4f4;
+ /* background:  url(../templates/ufwide/images/menu_seperator.png) 100% 50%  no-repeat;*/
+  z-index:10;
+}
+
+#headernav ul li span, #headernav ul li a:link, #headernav ul li a:visited {
+	display: block;
+	float: left;
+	padding: 5px 12px 5px 12px;
+	text-decoration: none;
+	color: #FFF;
+
+    text-transform:uppercase;
+    font-weight:bold;font-family:arial,verdana,helvetica;font-size:1.1em;
+    z-index:100
+}
+
+#headernav ul li span,
+#headernav ul li a.current,
+#headernav ul li a:hover {
+
+  /*background: url(../templates/ufwide/images/menu_seperator_hover.png) 100% 50%  no-repeat;*/
+background: #FFF001;
+
+	color: #666666 !important;
+	text-decoration: none;
+    z-index:2000
+}
+
+#headernav #active_menu{
+
+	color:#ff9900 !important;
+
+}
+#headernav a#active_menu:hover{
+
+	color:#666 !important;
+
+}
+
+/* the following two might want same bg and foreground colors to match highlighting*/
+ li.mainlevel_current{
+ background:url(../templates/ufwide/images/menutab_bg.png) left top repeat-x;
+    color:#333;
+}
+#headernav li a.mainlevel_active{ /*set bg color to match active menu*/
+	background: transparent;
+	color:#ff9900 !important;
+	border-top:0px solid #fff
+}
+
+/*vertical menu style */
+#active_menu{
+/*background:url(../templates/ufwide/images/menu_active_bg_right.png) right top no-repeat;*/
+
+	color:#CC6600 ;font-weight:bold;
+}
+#subnav #active_menu{
+	background-color: red;
+	color:#333;
+    border-left: 0px solid #3A4D72;
+    border-right: 0px solid #5ba3e0;
+    background-color: #fff;
+    font-weight:bold;
+}
+  /*set highlight style of sub nav*/
+   	#subnav li.mainlevel_active{
+      background-color: #FFFFFF;
+      background:url(../templates/ufwide/images/arrow_active.png) no-repeat;
+      background-position:0 .4em;
+      padding:0px 0 5px 12px;
+      font-weight:bold;
+    }
+   	#subnav li.mainlevel_current{
+      background-color: #FFFFFF;
+      background:url(../templates/ufwide/images/arrow_active.png) no-repeat;
+      background-position:0 .4em;
+      padding:0px 0 5px 12px;
+      font-weight:bold;
+    }
+
+#subnav{
+  width: 100%;
+  background-color:transparent;
+  font-size: 0.9em;
+  padding:0 0 1em 0;
+  margin-bottom:1em;
+  color:#666;
+}
+
+#subnav ul{
+  list-style:none;
+  margin:0 5px 0 20px;
+  padding:0;
+  border:0px solid red;
+  background-color:transparent;
+  height:100%; font-size: 1em;
+}
+
+#subnav li{
+  background:url(../templates/ufwide/images/arrow_up.png) no-repeat;
+  background-position:0 .4em;
+  padding:0px 0 5px 12px;
+  overflow:hidden;  border-bottom:1px dotted #cccccc;
+  margin-right:10px
+}
+
+#subnav li a{
+  display:block;
+  padding:0px 5px 0px 0;
+  border-left:0px solid #00404b;
+  border-right:0px solid #508fc4;
+
+  background:transparent;
+  color:#666;
+  text-decoration:none;
+  /*text-transform: uppercase;*/
+  width: 100%;
+  font-weight:bold;
+}
+
+html > body #subnav li a{
+  width:auto;
+}
+
+#subnav li a:visited{
+  border-left:0px solid #3A4D72;
+  border-right:0px solid #5ba3e0;
+
+  color:#666666;
+}
+
+#subnav li a:hover{
+
+  color:#999999;
+   /* background:url(../templates/ufwide/images/arrow_active.png)0 .4em no-repeat;*/
+}
+
+ul#mainlevel ul  {
+margin:0;
+}
+
+ul#mainlevel li.mainlevel_active ul  {
+margin:0;
+}
+
+ul#mainlevel li.mainlevel_active ul li.sublevel_current {
+	text-decoration:none;
+    border:none;
+    width:95%;
+	padding: 0 5px 0 10px;
+	background:url(../templates/ufwide/images/arrow_active.png) no-repeat left
+}
+
+	/** sub nav 3 right col  **************************/
+#rightnav {
+	width: 100%;
+	border-right: 0px solid #f4f4f4;
+	padding: 0 0px 1em 0;
+	margin:0 0 3em 0px;
+	color: #333;
+}
+/*#rightnav h3{
+	background-color: #FFF;
+	border-bottom: 1px solid #ccc;
+	background:url(../templates/ufwide/images/arrow2.png) no-repeat;
+	background: transparent;
+	background-position: 0 .6em;
+	padding: 3px 0 3px 2px;
+	margin: 0 0 0 0px;
+	color: #003466;
+} */
+
+	#rightnav #active_menu{
+	background-color: #ccc;
+	color:#333
+	}
+
+	#rightnav h4 {
+
+		margin: 0;
+		padding: 0;
+		margin-left: 1em;
+		}
+
+	#rightnav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		margin-left: 2em;
+		}
+
+	#rightnav li {
+background:transparent url(../templates/ufwide/images/arrow.png) no-repeat scroll 0 0.6em;
+padding:3px 8px 3px 1em;
+font-size:95%!important;
+
+	}
+
+	html>body #rightnav li a {
+		 width: auto;
+		}
+
+	#rightnav li a:hover {
+
+		}
+	#rightnav .mainlevel_current-sub{
+		font-weight:bold
+	}
+
+	#rightnav .mainlevel_active-sub{
+		padding: 5px 5px 5px 0;
+		font-weight:bold
+	}
+	#rightnav .sublevel_current-sub{
+		
+		padding: 5px 5px 5px 0px;
+	font-weight:bold
+	}
+	#rightnav .sublevel-sub{
+		
+		padding: 5px 5px 5px 0px;
+
+	}
+
+/*smallmenu used at footer*/
+
+
+#mainlevelsmall a{
+  font-size:0.9em; font-weight:normal
+}
+
+.sitemap  {
+  float:left;display:inline;margin:2px 1px 15px 0px; padding: 0px 10px 12px 10px;
+font-size:0.8em;color:#C0C0C0;            height:1%;
+}
+.sitemap a{
+     font-size:0.8em;color:#C0C0C0;
+}
+
+
+#mainlevelsmall li{
+ float:left;display:block;margin:5px 0 5px 0px; padding: 0px 10px 2px 10px; border-right: 1px solid #C0C0C0;
+ line-height:0.6em;
+}
+#mainlevelsmall li a:link, #mainlevelsmall ul a:visited, #mainlevelsmall ul a:hover, #mainlevelsmall ul a:active {
+text-decoration: none;font-size:0.9em;
+color:#666;}
+
+/*top tabs*/
+/* Sliding Door Tabbed Menus */
+
+
+
+/*alans replacement extended menu tabs css - use menuclass 'topptab' and module class 'modtoptab'*/
+ #mainleveltoptab li.mainlevel_currenttoptab a{
+	background:url(../templates/ufwide/images/tmenu_active_r.png) no-repeat bottom right;
+  color: #333;
+}
+ #mainleveltoptab li.mainlevel_currenttoptab {
+	background:url(../templates/ufwide/images/tmenu_active_l.png) no-repeat bottom left;
+	}
+ #mainleveltoptab li.mainlevel_activetoptab a{
+	background:url(../templates/ufwide/images/tmenu_active_r.png) no-repeat bottom right;
+	 color: #333;
+	 }
+ #mainleveltoptab li.mainlevel_activetoptab {
+	background:url(../templates/ufwide/images/tmenu_active_l.png) no-repeat bottom left;
+	}
+	

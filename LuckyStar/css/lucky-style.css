@@ -1,0 +1,434 @@
+body {
+font-family:"ÇlÇr ÉSÉVÉbÉN", "OsakaÅ|ìôïù";
+font-size:12px;
+width:800px;
+text-align:left;
+margin:0;
+}
+
+body,td,th {
+color:#333;
+font-size:12px;
+line-height:16px;
+}
+
+h1,h2 {
+color:#300;
+font-size:16px;
+line-height:20px;
+}
+
+h3,h4,h5,h6 {
+color:#609;
+font-size:14px;
+line-height:18px;
+}
+
+.heightAll {
+min-height:500px;
+}
+
+.top {
+vertical-align:top;
+}
+
+.middle {
+vertical-align:middle;
+}
+
+.bottom {
+vertical-align:bottom;
+}
+
+.header {
+width:801px;
+border-right:1px solid #F39;
+border-top:1px solid #F39;
+margin:0;
+padding:0;
+}
+
+.footer_link {
+background-color:#FFF;
+width:801px;
+padding-top:5px;
+border-right:1px solid #F39;
+margin:0;
+}
+
+.footer {
+background-image:url(../images/footer.jpg);
+width:801px;
+border-right:1px solid #F39;
+border-bottom:1px solid #F39;
+margin:0;
+padding:0;
+}
+
+.main_luxi {
+width:800px;
+min-height:800px;
+border-right:1px solid #F39;
+background-image:url(../images/luxi_bg.gif);
+text-align:left;
+margin:0;
+padding:0;
+min-height:600px;
+}
+
+.main {
+width:800px;
+border-right:1px solid #F39;
+text-align:left;
+margin:0;
+padding:0;
+}
+
+.bg_y {
+background-image:url(../images/bg_y.gif);
+}
+
+.bg_w {
+background-color:#FFF;
+}
+
+/*
+.img_top {
+background-image:url(../img/top_img.jpg);
+background-repeat:no-repeat;
+}
+*/
+
+.img_top221125_rakitama2022 {
+background-image:url(../images/top_221125_rakitama2022.jpg);
+background-repeat:no-repeat;
+}
+.img_top110527_BDBOX {
+background-image:url(../images/top_110527_BDBOX.jpg);
+background-repeat:no-repeat;
+}
+.img_top110315_BDBOX {
+background-image:url(../images/top_110315_BDBOX.jpg);
+background-repeat:no-repeat;
+}
+.img_top100314_BDBOX {
+background-image:url(../images/top_100314_BDBOX.jpg);
+background-repeat:no-repeat;
+}
+.img_top100730_racer {
+background-image:url(../images/top_100730_racer.jpg);
+background-repeat:no-repeat;
+}
+.img_top100401_racer {
+background-image:url(../images/top_100401_racer.jpg);
+background-repeat:no-repeat;
+}
+.img_top100319_racer {
+background-image:url(../images/top_100319_racer.jpg);
+background-repeat:no-repeat;
+}
+.img_top091119_livedvd {
+background-image:url(../images/top_liveDVD091119.jpg);
+background-repeat:no-repeat;
+}
+.img_top090329_repo {
+background-image:url(../images/top_live_budokan090601.jpg);
+background-repeat:no-repeat;
+}
+.img_top0904 {
+background-image:url(../images/top_live090329.jpg);
+background-repeat:no-repeat;
+}
+.img_top090204 {
+background-image:url(../images/top_live090204_05.jpg);
+/*background-image:url(../img/top_live090204_04.jpg);*/
+/*background-image:url(../img/top_live090204_02.jpg);*/
+background-repeat:no-repeat;
+}
+.img_top081027 {
+background-image:url(../images/top_ova081027_repo.jpg);
+background-repeat:no-repeat;
+}
+.img_top080911 {
+background-image:url(../images/top_ova080911.jpg);
+background-repeat:no-repeat;
+}
+.img_top080910 {
+background-image:url(../images/top_comics06.jpg);
+background-repeat:no-repeat;
+}
+.img_top080822 {
+background-image:url(../images/top_ova080822.jpg);
+background-repeat:no-repeat;
+}
+.img_top080731 {
+background-image:url(../images/top_ova080731.jpg);
+background-repeat:no-repeat;
+}
+.img_top080724 {
+background-image:url(../images/top_ova080724.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top080623 {
+background-image:url(../images/top_ova080623.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top080428 {
+background-image:url(../images/top_ev080406_repo.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top080410 {
+background-image:url(../images/top_ev080315_repo.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top080209 {
+background-image:url(../images/top_080209.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top071225 {
+background-image:url(../images/top_071225.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top071122 {
+background-image:url(../images/top_071122.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top071101 {
+background-image:url(../images/top_071101.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top070928 {
+background-image:url(../images/top_070928.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top070914 {
+background-image:url(../images/top_070914.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top070911 {
+background-image:url(../images/070911top.jpg);
+background-repeat:no-repeat;
+}
+
+.img_top080406 {
+background-image:url(../images/top_080406.jpg);
+background-repeat:no-repeat;
+}
+
+/*
+.img_top070903 {
+background-image:url(../img/070903top.gif);
+background-repeat:no-repeat;
+}
+
+ 070813 ÅuîíêŒÇ›ÇÃÇÈé˜äCÇ÷Åv*/
+/*.img_top {
+background-image:url(../img/top_070813.jpg);
+background-repeat:no-repeat;
+}
+*/
+/*Å@070727Å@8/2î≠îÑCDóp
+.img_top_sp {
+background-image:url(../img/top_070728.gif);
+background-repeat:no-repeat;
+}
+070804Å@ÉAÉjÉÅìXí∑ìoèÍ
+.img_top_sp {
+background-image:url(../img/top2_070803.jpg);
+background-repeat:no-repeat;
+}
+
+*/
+.weeklyNews {
+font-size:12px;
+line-height:16px;
+padding:10px;
+}
+
+.minoru_room {
+padding:8px;
+}
+
+.minoruTitle {
+font-size:14px;
+line-height:16px;
+font-weight:700;
+}
+
+.recommendTop {
+font-size:12px;
+line-height:18px;
+margin:10px;
+}
+
+.recommendTitle {
+font-size:14px;
+line-height:20px;
+font-weight:700;
+}
+
+.caption {
+font-size:10px;
+margin-left:10px;
+}
+
+.recommendTxt {
+font-size:12px;
+line-height:18px;
+}
+
+.recommendLine {
+border:#F99 dotted 1px;
+}
+
+.recomendImg {
+margin:5px;
+}
+
+.red {
+color:red;
+}
+
+.pink {
+color:#F99;
+}
+
+.pealpink {
+color:#FCC;
+}
+
+.blue {
+color:#03C;
+}
+
+.white {
+color:#FFF;
+}
+
+body,html,weeklyNews {
+scrollbar-arrow-color:#fff;
+scrollbar-base-color:#fff8ef;
+scrollbar-darkshadow-color:#f69;
+}
+
+a.activ,a.mover,.hotpink {
+color:#F69;
+}
+
+.m_left,.m_right {
+background-image:url(../images/lucky-ch_index_14.gif);
+}
+
+ul#OVANavi {
+	margin:0;
+	padding: 0;
+	width: 525px; 
+}
+
+ul#OVANavi:after {
+	height: 0;
+	visibility: hidden;
+	content: ".";
+	display: block;
+	clear: both;
+}
+
+ul#OVANavi li {
+	margin: 0 5px;
+	padding: 0;
+	float: left;
+	width: 160px; 
+	line-height: 1;
+	list-style-type: none;
+}
+
+ul#OVANavi li a {
+	padding: 5px 10px; 
+	display: block;
+	position: relative;
+	font-size: 12px;
+	color: #f69;
+	text-align: center;
+	text-decoration: none;
+	background-color: #fff8fe;
+	border:1px solid #f69;
+}
+
+ul#OVANavi li a:hover {
+	color: #fff;
+	background-color: #f69;
+}
+
+.ova_photo {	
+	width:669px;
+	display:block;
+	margin-top:15px;
+	}
+
+.ova_img {
+	border:1px solid #f69;
+	}
+.ova_imgArea {
+	margin:2px;
+	float:left;
+	}
+
+.img_racertop {
+background-image:url(../images/racer_bg.jpg);
+background-repeat:no-repeat;
+}
+
+.img_racertop2 {
+background-image:url(../images/racerR.jpg);
+background-repeat:no-repeat;
+}
+
+.img_racerResult {
+background-image:url(../images/result_bg.gif);
+background-repeat:no-repeat;
+}
+
+.img_racerResult2 {
+background-image:url(../images/Rresult_bg.gif);
+background-repeat:no-repeat;
+}
+
+.img_racerLS {
+background-image:url(../images/racer_09.jpg);
+background-repeat:no-repeat;
+}
+
+.racerResultTitle {
+font-size:12px;
+font-weight:1000;
+color:#000;
+}
+
+.racerResultTitle2 {
+font-size:9px;
+font-weight:1000;
+color:#000;
+}
+
+.racerResult {
+font-size:11px;
+font-weight:500;
+color:#000;
+}
+
+.racerResultB {
+font-size:11px;
+font-weight:1000;
+color:#000;
+}
+

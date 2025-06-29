@@ -1,0 +1,683 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 15:04:18 Aug 11, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 7:03:57 Dec 2, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*modules */
+/*home*/
+/*
+div.module {
+  background: url(../templates/ufwide/images/rounded_topleft.png) 0 0 no-repeat;
+  padding: 0;
+}
+div.module h3{
+  padding: 0px 0 0px 10px;
+  margin:0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_light.png) 0 0 repeat-x;
+  color:#333;
+  height:30px
+
+}
+div.module div {
+  background: transparent url(../templates/ufwide/images/rounded_bottomleft.png) 0 100% no-repeat !important;
+  margin: 0;
+  border: 0;
+}
+
+div.module div div{
+  background:transparent  url(../templates/ufwide/images/rounded_topright.png) 100% 0 no-repeat !important;
+}
+
+div.module div div div {
+  background:transparent url(../templates/ufwide/images/rounded_bottomright.png) 100% 100% no-repeat !important;
+  	padding:0 0 20px 0;
+    margin:0 0 20px 0;
+}
+div.module div div div div {
+  background:none;
+}
+div.module div div div div div {
+  background:none;
+}
+
+*/
+
+
+/*div.modulemail textarea, select, input{
+  border:1px solid #666;  margin: 3px 0 4px 0
+}div.moduletag h3{
+	background:url(../templates/ufwide/images/tagicon.png) no-repeat;
+	background-position: 1em .4em;
+	padding: 5px 0 5px 3em;
+	padding:2px 2px 2px 6px;color:#333333;
+    text-transform: uppercase;
+}
+div.moduletag{margin:0 0 20px 0;color:#666;font-size:1em}
+*/
+
+
+.moduletable{margin:0 0 20px 0}
+.module h3{
+	padding:2px 2px 2px 6px;color:#333333;
+}
+label{
+	color:#666
+}
+
+
+
+
+ul#keytag  {
+padding:0 0 0 0px;margin:0 0 0 5px;
+}
+
+#keytag li{
+	background:url(../templates/ufwide/images/tagicon_blue.png) no-repeat;
+	background-position: 1em .7em;
+	padding: 5px 8px 5px 2.5em;
+}
+#keytag a {
+  text-decoration: none;
+  font-size:0.9em
+}
+
+/*module types*/
+/*background colors set in modules
+use module class 'xxx gray'  to use bg colors */
+#rightnav .gray {
+    background:#ccc
+}
+#subnav .grad {
+	background:  url(../templates/ufwide/images/box_signup.png) 0 0 no-repeat;
+}
+#rightnav .grad {
+	background:  url(../templates/ufwide/images/box_gradient.png) 0 0 no-repeat;
+
+}
+
+/*standard */
+
+
+
+
+/*tag*/
+div.moduletag h3{
+  padding: 6px 0 3px 30px;
+  margin:0 0 10px 0;
+  border:none;
+/*  background:  url(../templates/ufwide/images/mod_h3_blue.png) 0 0 repeat-x;*/
+  color:#333;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.moduletag {
+	background:  url(../templates/ufwide/images/box_tag.png) 0 0 no-repeat;
+	border-top: 1px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.moduletag div div div {
+	background:  url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.moduletag div div div div{
+background:none
+}
+/* light*/
+div.modulelight h3{
+  padding: 6px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_light.png) 0 0 repeat-x;
+  color:#333;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulelight {
+	background:  url(../templates/ufwide/images/box_gray_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulelight div div div {
+	background:  url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+/*blue*/
+div.moduleblue h3{
+  padding: 3px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_blue.png) 0 0 repeat-x;
+  color:#fff;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.moduleblue {
+	background:  url(../templates/ufwide/images/box_gray_top.png) 0 0 no-repeat;
+	border-top: 1px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.moduleblue div div div {
+	background:  url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+/*peel*/
+div.modulepeel h3{
+  padding:6px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_dark.png) 0 0 repeat-x;
+  color:#fff;
+  height:30px
+}
+
+div.modulepeel {
+	background:  url(../templates/ufwide/images/box_gray_top_peel.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+	width: 100%;
+}
+div.modulepeel div div div {
+	background:  url(../templates/ufwide/images/box_gray_bot_peel.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulepeel div div div p{
+    margin:0 5px 0 5px
+}
+div.modulepeel div div div div{
+background:none
+}
+div.modulepeel div div div div.pretext{
+  background: none;
+}
+
+/*gold*/
+div.modulegold h3{
+  padding: 6px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_gold.png) 0 0 repeat-x;
+  color:#fff;    height:30px
+  /*background: #333;
+  */
+}
+
+div.modulegold {
+	background:  url(../templates/ufwide/images/box_gray_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulegold div div div {
+	background:  url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+
+
+/*dark*/
+div.moduledark h3{
+  padding: 6px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_dark.png) 0 0 repeat-x;
+  color:#fff;    height:30px
+  /*background: #333;
+  */
+}
+
+div.moduledark {
+	background:  url(../templates/ufwide/images/box_gray_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.moduledark div div div {
+	background: transparent url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+
+/*rss*/
+div.modulerss h3{
+  padding: 6px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_light.png) 0 0 repeat-x;
+  color:#333;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulerss {
+	background:  url(../templates/ufwide/images/box_gray_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulerss div div div {
+	background:  url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulerss div div div div{
+	background:none
+    }
+/*module tweaks*/
+.wide {
+  width:100% !important;
+  background:none !important;
+}
+
+/*related items */
+
+div.modulerelated h3{
+  padding: 7px 0 0 20px;margin:0 0 6px 0;
+  border:none;font-size:0.9em;
+  text-transform: uppercase;
+}
+div.modulerelated h4{
+  padding: 2px 0 0 10px;margin:0 0 2px 0;
+  border:none;font-size:0.9em;
+
+}
+div.modulerelated {
+   /*	background: url(../templates/ufwide/images/module_related.png) 0 0 no-repeat;*/
+    background: url(../templates/ufwide/images/module_mmap.png) 0 0 no-repeat;
+	border: 0px solid #FF0000;
+	margin:20px 0 10px 0;
+	padding:0px 2px 0 7px;
+	width: 100%;font-size:0.9em;
+}
+
+#rel ul {
+list-style: none;
+margin: 0;
+padding: 0;
+margin-left: 0.1em;
+}
+
+#rel li {
+background:url(../templates/ufwide/images/arrow_rel.png) no-repeat;
+background-position: 0 .6em;
+/*padding: 3px 0 3px 15px;*/
+  	padding: 1px 8px 1px 1.1em;
+
+}
+#rel li a {
+text-decoration:none;
+
+}
+#rel li a:hover {
+text-decoration:none;
+color:#000;
+
+}
+/*map block*/
+div.modulemmap h3{
+  padding: 7px 0 0 20px;margin:0 0 10px 0;
+  border:none;font-size:0.9em;
+}
+
+div.modulemmap {
+	background:  url(../templates/ufwide/images/module_mmap.png) 0 0 no-repeat;
+	border: 0px solid #FF0000;
+	margin:0 0 10px 0;
+	padding:0px 2px 0 7px;
+	width: 100%;font-size:0.9em;
+}
+/*div.modulemmap div div div p img{
+  background: transparent;
+} */
+/*default right*/
+div.moduleright h3{
+  padding: 7px 0 0 20px;margin:0 0 10px 0;
+  border:none;font-size:0.9em;
+}
+
+div.moduleright {
+	background:  url(../templates/ufwide/images/module_right.png) 0 0 no-repeat;
+	border: 0px solid #FF0000;
+	margin:0 0 10px 0;
+	padding:0px 2px 0 7px;
+	width: 100%;font-size:0.9em;
+}
+
+/*home page modules */
+div.modulemain h3{
+  padding: 6px 0 0 10px !important;
+  /*margin:0 0 10px 0;*/
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_dark.png) 0 0 repeat-x;
+  color:#fff;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulemain {
+	background:  url(../templates/ufwide/images/box_home_main_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulemain div div div {
+   	background:  url(../templates/ufwide/images/box_home_main_bot.png) bottom left no-repeat;
+    /*
+	border: 0px solid #CCCCCC;
+	padding: 0 10px 0 0;
+	padding:0px 2px 0 7px;
+	width: 100%;          */
+}
+
+div.modulehomeblue h3{
+  padding: 6px 0 0 10px !important;
+  /*margin:0 0 10px 0;*/
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_blue.png) 0 0 repeat-x;
+  color:#fff;
+  height:30px;
+  margin:0
+  /*background: #333;
+  */
+}
+
+div.modulehomeblue {
+	background:  url(../templates/ufwide/images/box_home_row2_col_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+    height:280px;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulehomeblue div div div {
+   	background:  url(../templates/ufwide/images/box_home_row2_col_bottom.png) bottom left no-repeat;
+    height:280px;
+	border: 0px solid #CCCCCC;
+	padding: 0 10px 0 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+
+/*whats news*/
+
+div.modulewhatnew h3{
+  padding: 3px 0 0 10px;
+  /*margin:0 0 10px 0;*/
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_gold.png) 0 0 repeat-x;
+  color:#333;
+  height:30px;
+  margin:0
+}
+
+div.modulewhatnew {
+    background:transparent url(../templates/ufwide/images/box_whatsnew_top.png) no-repeat scroll left top;
+
+	border: 0px solid #CCCCCC;
+	margin:0 5px 10px 16px;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 700px;
+}
+div.modulewhatnew div div div {
+  	background:  url(../templates/ufwide/images/box_whatsnew_bottom.png) bottom left  no-repeat;
+
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+
+/* mymail*/
+div.modulemymail h3{
+  padding: 3px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_mymail.png) 0 0 repeat-x;
+  color:#333;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulemymail {
+  background:  url(../templates/ufwide/images/box_mymail_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 20px 10px 20px;
+    width:455px;
+	/*padding:0px 2px 0 7px;*/
+
+}
+div.modulemymail div div div {
+   background:  url(../templates/ufwide/images/box_mymail_bottom.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+/*laTEST COMMENTS*/
+
+div.modulecomment h3{
+  padding: 3px 0 3px 30px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_arrow_dark_orange.png) 0 0 no-repeat;
+  color:#fff;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulecomment  {
+  background:  url(../templates/ufwide/images/box_mhome_main_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0;
+
+	/*padding:0px 2px 0 7px;*/
+
+}
+
+/*div.modulecomment div div{
+  margin:0;padding:0 ;
+  	background: url(../templates/ufwide/images/blockquote_start.png) 7px 35px  no-repeat;
+} */
+div.modulecomment  div div div {
+   background:  url(../templates/ufwide/images/box_mhome_main_bottom.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 15px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+    height:220px;
+    overflow:visible;
+}
+div.modulecomment div div div  span.small{
+ padding:0 0 0 20px
+}
+/*hmembers home coloumns*/
+
+div.moduleusermain h3{
+  padding: 3px 0 3px 30px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_blue.png) 0 0 repeat-x;
+  color:#fff;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.moduleusermain {
+  background:  url(../templates/ufwide/images/box_mhome_main_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+		margin:0 ;
+
+
+	/*padding:0px 2px 0 7px;*/
+
+}
+div.moduleusermain div div div {
+   background:  url(../templates/ufwide/images/box_mhome_main_bottom.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 50px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%; height:250px;
+}
+
+div.moduleuserhome h3{
+  padding: 3px 0 3px 30px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_arrow_dark_orange.png) 0 0 no-repeat;
+  color:#fff;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.moduleuserhome {
+  background:  url(../templates/ufwide/images/box_mhome_col_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+
+
+	/*padding:0px 2px 0 7px;*/
+
+}
+div.moduleuserhome div div div {
+   background:  url(../templates/ufwide/images/box_mhome_col_bottom.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 20px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+    height:260px;
+    overflow:visible;
+}
+/*NONE*/
+div.modulenone h3{
+  padding: 3px 0 3px 30px;
+  margin:0 0 10px 0;
+  border:none;
+
+  color:#333;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulenone {
+  /*background:  url(../templates/ufwide/images/box_mhome_col_top.png) 0 0 no-repeat;*/
+  background:none;
+	border: 0px solid #CCCCCC;
+    clear:both
+
+
+	/*padding:0px 2px 0 7px;*/
+
+}
+div.modulenone div div div {
+   /*background:  url(../templates/ufwide/images/box_mhome_col_bottom.png) bottom left  no-repeat;*/
+   background:none;
+	border: 0px solid #CCCCCC;
+	padding:0 0 20px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+       min-height:100%;
+    overflow:visible;
+}
+
+/* map*/
+div.modulemap h3{
+  padding: 6px 0 3px 10px;
+  margin:0 0 10px 0;
+  border:none;
+  background:  url(../templates/ufwide/images/mod_h3_light.png) 0 0 repeat-x;
+  color:#333;
+  height:30px
+  /*background: #333;
+  */
+}
+
+div.modulemap {
+	background:  url(../templates/ufwide/images/box_gray_top.png) 0 0 no-repeat;
+	border: 0px solid #CCCCCC;
+	margin:0 0 10px 0;
+
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulemap div div div {
+	background:  url(../templates/ufwide/images/box_bottom_round.png) bottom left  no-repeat;
+	border: 0px solid #CCCCCC;
+	padding:0 0 10px 0;
+	/*padding:0px 2px 0 7px;*/
+	width: 100%;
+}
+div.modulemap div div div div div{
+
+background:transparent url(../templates/ufwide/images/arrow_up.png) no-repeat scroll 0 0.8em !important;
+border-bottom:1px dotted #CCCCCC;
+margin:0 10px 0 0;
+overflow:hidden;
+padding:0 0 3px 10px;
+
+}
+/*docman latest*/
+
+ul.mod_docman_latestdown{
+  margin:0!important;
+  padding:0
+}
+li.mod_docman_latestdown{
+  margin:0!important;
+  padding:3px
+}

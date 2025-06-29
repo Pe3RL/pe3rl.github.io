@@ -1,0 +1,106 @@
+/*
+1）TOP関連、組み立て関連
+2）文字関連
+3）感覚用
+*/
+
+/*　1）TOP関連、組み立て関連*/
+body { 
+ 	background-color:#FFFFFF;
+	text-align:center;
+	margin:0px;
+    text-align:left;     /* 中身を左側表示に戻す */
+    width:275px;         /* 幅を決定する */
+ }
+body,html {
+	scrollbar-arrow-color: #fff8f8;
+	scrollbar-base-color: #fff8ef;
+	scrollbar-darkshadow-color: #ff6699;	
+	}
+#news {
+	width:240px;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:5px;
+	margin-right:5px;
+	font-size:12px;
+	line-height:14px;
+}
+
+.new{
+	background-color:#FFFFFF;
+	font-size:12px;
+	color:#333333;
+	line-height:14px;
+	padding-left:10px;
+	margin-top:5px;
+	}
+
+.tv{
+	font-size:12px;
+	color:#333333;
+	line-height:14px;
+	margin-top:5px;
+	padding-left:10px;
+	}
+.tv_new{
+	font-size:12px;
+	color:#333333;
+	line-height:14px;
+	margin-top:5px;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	}
+/*	background-image: url(img/back_luckystar.jpg); */
+
+.line{
+	border-top-style:dotted;
+	border-top-width:1px; 
+	border-top-color:#FFFFFF; 
+	padding:5px; 
+	margin-top:5px;
+	color:#703333;
+	font-weight:normal;
+	text-align:18px;
+}
+hr{ width:90%; color:#999999;}
+
+/*　2）文字関連*/
+.h1 {
+	font-size:18px;
+	color: #3333FF;
+	font-weight: bold;
+	line-height:18px;
+}
+.red {
+color:#FF0000;
+}
+
+.pink {
+color:#F99;
+}
+
+.pealpink {
+color:#FCC;
+}
+
+.blue {
+color:#03C;
+}
+
+.title{
+	color:#333333;
+	font-weight:bold;
+	line-height:16px;
+	font-size:13px;
+}
+.txt{
+	font-size:12px;
+	color:#333333;
+	line-height:14px;
+}
+
+/*3）間隔*/
+.h10sp{
+	height:10px;
+	}

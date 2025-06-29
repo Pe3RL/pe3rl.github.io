@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Trivia Questions</title>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      src: url('Inter-VariableFont_opsz,wght.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      margin: 20px;
+      background: #333333;
+      color: white;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-width: 300px;
+      width: 100%;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    select#categorySelect {
+      background: #444;
+      color: white;
+      border: 1px solid #666;
+      border-radius: 3px;
+      padding: 8px 10px;
+      font-family: 'Inter', Arial, sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      min-width: 180px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+      user-select: none;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    select#categorySelect:focus {
+      outline: none;
+      background: #555;
+    }
+    .cooldown-label {
+      font-size: 0.9em;
+      color: #ccc;
+      font-family: 'Inter', Arial, sans-serif;
+      user-select: none;
+      text-align: center;
+    }
+    .api-note {
+      font-size: 0.8em;
+      color: #bbb;
+      font-family: 'Inter', Arial, sans-serif;
+      margin-top: 4px;
+      user-select: none;
+      max-width: 300px;
+      text-align: center;
+    }
+    .question-container {
+      position: relative;
+      z-index: 0;
+      margin-top: 10px;
+      max-width: 600px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .question-box {
+      background: #444444;
+      border: 1px solid #666;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.8);
+      color: white;
+      user-select: none;
+      font-family: 'Inter', Arial, sans-serif;
+      transition: background-color 0.3s ease;
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+      position: relative;
+    }
+    .question-box.shake {
+      animation: shake 0.4s ease;
+      background-color: rgba(240, 128, 128, 0.7) !important;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-8px); }
+      50% { transform: translateX(8px); }
+      75% { transform: translateX(-8px); }
+      100% { transform: translateX(0); }
+    }
+    .counter {
+      margin-top: 12px;
+      padding: 6px 12px;
+      background: #444;
+      border: 1px solid #666;
+      border-radius: 6px;
+      color: white;
+      font-family: 'Inter', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 1rem;
+      user-select: none;
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .answer {
+      margin: 8px 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 16px;
+      user-select: none;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+      border-radius: 8px;
+      padding: 6px 8px;
+      font-weight: bold;
+    }
+    .answer:hover {
+      background-color: transparent;
+      transform: none;
+      box-shadow: none;
+    }
+    .answer[data-letter="A"] { background-color: rgba(100, 149, 237, 0.7); color: blue; }
+    .answer[data-letter="B"] { background-color: rgba(240, 128, 128, 0.7); color: red; }
+    .answer[data-letter="C"] { background-color: rgba(144, 238, 144, 0.7); color: green; }
+    .answer[data-letter="D"] { background-color: rgba(221, 160, 221, 0.7); color: magenta; }
+    .answer.disabled { cursor: default; transform: none !important; box-shadow: none !important; }
+    .answer.correct { color: #90ee90 !important; background-color: rgba(144, 238, 144, 0.7) !important; }
+    .answer.incorrect { color: #ee9090 !important; background-color: rgba(240, 128, 128, 0.7) !important; }
+    .top-right-link { margin-top: auto; max-width: 110px; max-height: 110px; cursor: pointer; display: flex; justify-content: center; align-items: center; box-sizing: border-box; user-select: none; z-index: 2; padding: 10px 0; order: 1; }
+    .top-right-link img { max-width: 100%; max-height: 100%; object-fit: contain; display: block; }
+    @media (max-width: 600px) {
+      body { padding-left: 10px; padding-right: 10px; }
+      .question-box { font-size: 14px; }
+      .answer { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="controls">
+    <select id="categorySelect" aria-label="Select Trivia Category">
+      <option value="">All Categories</option>
+    </select>
+    <div class="cooldown-label" id="cooldownLabel" style="display:none;"></div>
+    <div class="api-note">Categories fetched from Open Trivia Database API.</div>
+  </div>
+
+  <div class="question-container" id="questionContainer"></div>
+  <div class="counter" id="scoreCounter">Score: 0</div>
+
+  <a href="https://opentdb.com" target="_blank" rel="noopener" class="top-right-link" title="Open Trivia Database">
+    <img src="/dogshit/otdb.png" alt="Open Trivia Database" />
+  </a>
+
+  <audio id="quizAudio" src="https://pe3rl.nekoweb.org/music/Quiz.mp3" preload="auto" volume="0.15"></audio>
+
+  <script>
+    const container = document.getElementById("questionContainer");
+    const categorySelect = document.getElementById("categorySelect");
+    const cooldownLabel = document.getElementById("cooldownLabel");
+    const quizAudio = document.getElementById("quizAudio");
+    const scoreCounter = document.getElementById("scoreCounter");
+
+    let cooldown = 0;
+    let cooldownTimeout = null;
+    let currentQuestions = [];
+    let currentQuestionIndex = 0;
+    let audioPlaying = false;
+    let score = 0;
+
+    quizAudio.volume = 0.15;
+
+    function updateScoreDisplay() {
+      scoreCounter.textContent = `Score: ${score}`;
+    }
+
+    function decodeHtml(html) {
+      const txt = document.createElement("textarea");
+      txt.innerHTML = html;
+      return txt.value;
+    }
+
+    function loadCategories() {
+      fetch("https://opentdb.com/api_category.php")
+        .then(res => res.json())
+        .then(data => {
+          data.trivia_categories.forEach(cat => {
+            const option = document.createElement("option");
+            option.value = cat.id;
+            option.textContent = cat.name;
+            categorySelect.appendChild(option);
+          });
+        });
+    }
+
+    function startCooldown() {
+      cooldown = 5;
+      categorySelect.disabled = true;
+      cooldownLabel.style.display = "block";
+      cooldownLabel.textContent = `Please wait ${cooldown} seconds before changing category again.`;
+
+      cooldownTimeout = setInterval(() => {
+        cooldown--;
+        if (cooldown <= 0) {
+          clearInterval(cooldownTimeout);
+          categorySelect.disabled = false;
+          cooldownLabel.style.display = "none";
+        } else {
+          cooldownLabel.textContent = `Please wait ${cooldown} seconds before changing category again.`;
+        }
+      }, 1000);
+    }
+
+    function loadQuestions() {
+      const catId = categorySelect.value;
+      const url = `https://opentdb.com/api.php?amount=20&type=multiple${catId ? `&category=${catId}` : ""}`;
+      fetch(url)
+        .then(res => res.json())
+        .then(data => {
+          if (data.response_code !== 0) {
+            alert("Failed to fetch questions.");
+            return;
+          }
+          currentQuestions = data.results;
+          currentQuestionIndex = 0;
+          showQuestion(currentQuestions[currentQuestionIndex]);
+        });
+    }
+
+    const letterColors = ["blue", "red", "green", "magenta"];
+    const letters = ["A", "B", "C", "D"];
+
+    function playAudio() {
+      if (!audioPlaying) {
+        quizAudio.play().then(() => {
+          audioPlaying = true;
+        }).catch(() => {});
+      }
+    }
+
+    function showQuestion(q) {
+      container.innerHTML = "";
+      if (!q) return;
+
+      const box = document.createElement("div");
+      box.className = "question-box";
+
+      const questionText = decodeHtml(q.question);
+      const correct = decodeHtml(q.correct_answer);
+      const incorrects = q.incorrect_answers.map(a => decodeHtml(a));
+      const allAnswers = [...incorrects, correct].sort(() => Math.random() - 0.5);
+
+      const qElem = document.createElement("h3");
+      qElem.textContent = `Q: ${questionText}`;
+      box.appendChild(qElem);
+
+      let answered = false;
+
+      allAnswers.forEach((ans, i) => {
+        const ansDiv = document.createElement("div");
+        ansDiv.className = "answer";
+        ansDiv.dataset.isCorrect = (ans === correct).toString();
+        ansDiv.dataset.letter = letters[i];
+        ansDiv.innerHTML = `<span style="color:${letterColors[i]}"><b>${letters[i]}.</b></span> ${ans}`;
+
+        ansDiv.addEventListener("click", () => {
+          if (answered) return;
+          answered = true;
+
+          playAudio();
+
+          const answersEls = box.querySelectorAll(".answer");
+          answersEls.forEach(el => {
+            el.classList.add("disabled");
+            el.style.cursor = "default";
+            el.style.transform = "none";
+            el.style.boxShadow = "none";
+            if (el.dataset.isCorrect === "true") {
+              el.classList.add("correct");
+            } else {
+              el.classList.add("incorrect");
+            }
+          });
+
+          if (ans === correct) {
+            score++;
+          } else {
+            box.classList.add("shake");
+            score = 0;
+          }
+
+          updateScoreDisplay();
+
+          setTimeout(() => {
+            currentQuestionIndex++;
+            if (currentQuestionIndex >= currentQuestions.length) {
+              loadQuestions();
+            } else {
+              showQuestion(currentQuestions[currentQuestionIndex]);
+            }
+          }, 1500);
+        });
+
+        box.appendChild(ansDiv);
+      });
+
+      container.appendChild(box);
+    }
+
+    categorySelect.addEventListener("change", () => {
+      if (categorySelect.disabled) return;
+      startCooldown();
+      loadQuestions();
+    });
+
+    window.onload = () => {
+      loadCategories();
+      startCooldown();
+      loadQuestions();
+      playAudio();
+    };
+  </script>
+</body>
+</html>
