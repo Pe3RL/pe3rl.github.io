@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>pe3rl website</title>
   <link rel="icon" type="image/gif" href="/favicon.gif" />
-  <link rel="stylesheet" href="https://webring.nekoweb.org/onionring.css" />
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background-image: url('https://pe3rl.nekoweb.org/dogshit/konatererer.png');
+      background-image: url('https://pe3rl.github.io/dogshit/konatererer.png');
       background-repeat: no-repeat;
       background-position: left center;
       background-size: cover;
@@ -121,11 +120,6 @@
       box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
 
-    /* Nekowebring container with neutral background */
-    .nekowebring-container {
-      margin-top: 25px;
-    }
-
     @media (max-width: 800px) {
       .container {
         flex-direction: column;
@@ -146,16 +140,16 @@
   </style>
 </head>
 <body>
-  <img src="https://pe3rl.nekoweb.org//badass.gif" alt="badass" class="header-image" />
+  <img src="https://pe3rl.github.io/badass.gif" alt="badass" class="header-image" />
 
   <div class="container">
     <div class="main-image-container">
-      <img src="https://pe3rl.nekoweb.org/dogshit/konata" alt="konataizumi" />
+      <img src="https://pe3rl.github.io/dogshit/konata" alt="konataizumi" />
     </div>
     <div class="chatbox-container">
       <iframe src="https://www5.cbox.ws/box/?boxid=949602&boxtag=k3FNib" allowtransparency="yes" allow="autoplay" scrolling="auto"></iframe>
       <div id="click-counter-container" style="margin-top: 15px; text-align: center;">
-        <img id="click-counter-button" src="https://pe3rl.nekoweb.org/dogshit/clicker.png" alt="Clicker" style="width: 64px; height: auto; cursor: pointer; transition: transform 0.2s;" />
+        <img id="click-counter-button" src="https://pe3rl.github.io/dogshit/clicker.png" alt="Clicker" style="width: 64px; height: auto; cursor: pointer; transition: transform 0.2s;" />
         <div style="margin-top: 8px; font-weight: bold; font-size: 14px;">
           Clicks: <span id="click-count">0</span>
         </div>
@@ -165,30 +159,22 @@
 
   <footer>
     <div class="buttons">
-      <a href="https://pe3rl.nekoweb.org/index.html"><img src="https://pe3rl.nekoweb.org/dogshit/persona3button.png" alt="Persona 3 Button" /></a>
-      <a href="https://pe3rl.nekoweb.org/index.html"><img src="https://pe3rl.nekoweb.org/dogshit/persona4button.png" alt="Persona 4 Button" /></a>
-      <a href="https://pe3rl.nekoweb.org/Trivia/"><img src="https://pe3rl.nekoweb.org/dogshit/eatlusmusicbutton.png" alt="Atlus Music Button" /></a>
-      <a href="https://nekoweb.org/"><img src="https://nekoweb.org/assets/buttons/button6.gif" alt="NekoWeb Button" /></a>
-      <a href="https://www.kyotoanimation.co.jp/en/works/luckystar/"><img src="https://pe3rl.nekoweb.org/dogshit/846ctg.gif" alt="Lucky Star Button" /></a>
-      <a href="https://pe3rl.nekoweb.org/Trivia/"><img src="https://pe3rl.nekoweb.org/dogshit/meowbuttoin.png" alt="Trivia Button" /></a>
-      <a href="https://pe3rl.nekoweb.org/Cell.html"><img src="https://pe3rl.nekoweb.org/music/perfectcell.png" alt="Perfect Cell Button" /></a>
+      <a href="https://pe3rl.github.io/index.html"><img src="https://pe3rl.github.io/dogshit/persona3button.png" alt="Persona 3 Button" /></a>
+      <a href="https://pe3rl.github.io/index.html"><img src="https://pe3rl.github.io/dogshit/persona4button.png" alt="Persona 4 Button" /></a>
+      <a href="https://pe3rl.github.io/Trivia/"><img src="https://pe3rl.github.io/dogshit/eatlusmusicbutton.png" alt="Atlus Music Button" /></a>
+      <a href="https://pe3rl.github.io/"><img src="https://pe3rl.github.io/dogshit/846ctg.gif" alt="Lucky Star Button" /></a>
+      <a href="https://pe3rl.github.io/Trivia/"><img src="https://pe3rl.github.io/dogshit/meowbuttoin.png" alt="Trivia Button" /></a>
+      <a href="https://pe3rl.github.io/Cell.html"><img src="https://pe3rl.github.io/music/perfectcell.png" alt="Perfect Cell Button" /></a>
     </div>
 
     <div class="button-code-container">
       <p>add my button :3</p>
-      <textarea readonly>&lt;a href="https://pe3rl.nekoweb.org"&gt;&lt;img src="https://pe3rl.nekoweb.org/dogshit/meowbuttoin.png" alt="meow button"&gt;&lt;/a&gt;</textarea>
-    </div>
-
-    <div class="nekowebring-container">
-      <div id="nekowebring">
-        <script src="https://webring.nekoweb.org/onionring-variables.js"></script>
-        <script src="https://webring.nekoweb.org/onionring-widget.js"></script>
-      </div>
+      <textarea readonly>&lt;a href="https://pe3rl.github.io"&gt;&lt;img src="https://pe3rl.github.io/dogshit/meowbuttoin.png" alt="meow button"&gt;&lt;/a&gt;</textarea>
     </div>
   </footer>
 
   <audio id="bgm" autoplay loop>
-    <source src="https://pe3rl.nekoweb.org/music/mythemesong.mp3" type="audio/mpeg" />
+    <source src="https://pe3rl.github.io/music/mythemesong.mp3" type="audio/mpeg" />
   </audio>
 
   <script>
@@ -196,34 +182,27 @@
       const audio = document.getElementById('bgm');
       audio.volume = 0.10;
 
-      // Initialize click count from localStorage or 0
       let count = parseInt(localStorage.getItem('clickCount')) || 0;
       const counterDisplay = document.getElementById('click-count');
       const button = document.getElementById('click-counter-button');
 
       counterDisplay.textContent = count;
 
-      // Flag to track if audio started playing
       let audioStarted = false;
 
       button.addEventListener('click', function () {
-        // Start audio on first click as failsafe
         if (!audioStarted) {
           const playPromise = audio.play();
           if (playPromise !== undefined) {
-            playPromise.catch(() => {
-              // Autoplay failed, user interaction will trigger audio
-            });
+            playPromise.catch(() => {});
           }
           audioStarted = true;
         }
 
-        // Update count
         count++;
         counterDisplay.textContent = count;
         localStorage.setItem('clickCount', count);
 
-        // Bounce animation
         button.style.transform = 'scale(1.2)';
         setTimeout(() => {
           button.style.transform = 'scale(1)';
